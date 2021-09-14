@@ -11,7 +11,7 @@ from helper.list import list
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
           insert(int(message.chat.id))
-          await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to you selected language__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("Developer 🇧🇩" ,url="https://t.me/itspriyo") ],                 [InlineKeyboardButton("Support Group 👥", url="https://t.me/premiumappsaccountfree"),InlineKeyboardButton("How To Use ❔",url = "https://t.me/itspriyo") ]           ]        ) )
+          await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to your selected language__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("Developer 🇧🇩" ,url="https://t.me/kamruzzamanlabib") ],                 [InlineKeyboardButton("Adda Group 👥", url="https://t.me/AddaBazz02"),InlineKeyboardButton("Support ❔",url = "https://t.me/kamruzzamanlabib") ]           ]        ) )
             
             
 @Client.on_message(filters.private & filters.text  )
@@ -65,9 +65,9 @@ async def echo(client, message):
 							fromt = i
 						if list[i] == translation.dest:
 							to = i
-					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @PremiumAppsAccountFree")
+					await message.reply_text(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @AddaBazz02")
 			except Exception as e:
-					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @PremiumAppsAccountFree")
+					await message.reply_text(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @AddaBazz02")
 	else:
 		await  message.reply_text("Select language 👇",reply_to_message_id = message.message_id, reply_markup =keybord1)
 
@@ -283,7 +283,7 @@ async def translate_text(bot,update):
       					fromt = i
       				if list[i] == translation.dest:
       					to = i 
-      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @PremiumAppsAccountFree")
+      			await update.message.edit(f"Translated from **{fromt.capitalize()}** To **{to.capitalize()}**\n\n```{translation.text}```\n\n join @AddaBazz02")
       		except Exception as e:
-      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @PremiumAppsAccountFree")
+      			await update.message.edit(f"Translated from **{translation.src}** To **{translation.dest}**\n\n```{translation.text}```\n\n join @AddaBazz02")
       						
